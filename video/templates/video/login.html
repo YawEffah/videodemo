@@ -1,0 +1,19 @@
+{% extends 'video/layout.html' %}
+
+{% block main %}
+  <div class="form-container">
+      <h1 class="branding">Log In</h1>
+      <form action="{% url 'login' %}" method="POST">
+          {% csrf_token %}
+          Email <input type="email" placeholder="Email here .." name="username">
+          Password <input type="password" name="password">
+          {% if message %}
+            <p class="error">{{message}}</p>
+          {% endif %}
+          <div class="actions">  
+            <input type="submit" value="Sign In" class="submit">   
+          </div>
+      </form>
+      <p class="help-note">Don't have an Account?  <a href="{% url 'signup' %}">Sign Up</a></p>
+  </div>
+{% endblock %}

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #ccc;
+}
+
+#header {
+    background-color:  #0c2044;
+    align-items: center;
+    padding: 10px 40px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username{
+    color: #848484;
+    padding: 5px;
+}
+
+.logout-menu, .login-menu {
+    color: #757575;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    color: darkred;
+}
+
+.logo{
+    width: 50px;
+}
+
+.form-container {
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color:white;
+}
+
+.branding{
+    color: #0c2044;
+    font-size: 20px;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+form, form input {
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    margin: 3px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.helptext {
+    display: none;
+}
+
+.actions {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions input {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.actions input:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.actions .submit {
+    background: #0c2044;
+}
+
+.actions .reset {
+    background: darkred;
+    margin-right: 20px;
+}
+
+.help-note {
+    font-size: 14px;
+}
+
+.error {
+    color: darkred;
+    font-size: 14px;
+    text-align: center;
+}
+
+.errorlist{
+    color: darkred;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+}
+
+
+
